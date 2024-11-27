@@ -46,16 +46,12 @@
     };
   };
 
-  # Enable kde plasma6
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
+  services.xserver.desktopManager.budgie.enable = true;
+  services.xserver.displayManager.lightdm.enable = true;
 
-  environment.plasma6.excludePackages = with pkgs.kdePackages; [
-    plasma-browser-integration
-    konsole
-    oxygen
-    kate
-    elisa
+  environment.budgie.excludePackages = with pkgs; [
+    mate.mate-terminal
+    vlc
   ];
 
   # Enable CUPS to print documents.
