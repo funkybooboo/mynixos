@@ -149,6 +149,8 @@
     htop-vim
     libnotify
     fastfetch
+    oculante
+    mupdf
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
