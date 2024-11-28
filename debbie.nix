@@ -120,7 +120,6 @@
       drawing
       musicpod
       vlc
-      batmon
     ];
   };
 
@@ -160,15 +159,12 @@
     tree
     htop-vim
     fastfetch
-    waybar
     wofi
-    hyprpaper
-    hyprwall
     networkmanagerapplet
     nautilus
     luajitPackages.luarocks-nix
     lua
-    wayclip
+    batmon
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
