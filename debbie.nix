@@ -120,7 +120,6 @@
       drawing
       musicpod
       vlc
-      sublime
     ];
   };
 
