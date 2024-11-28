@@ -49,10 +49,15 @@
   programs.hyprland = {
     # Install the packages from nixpkgs
     enable = true;
+    # Whether to enable XWayland
+    xwayland.enable = true;
   };
 
   services.xserver.desktopManager.budgie.enable = true;
+
   services.xserver.displayManager.lightdm.enable = true;
+
+  services.xserver.displayManager.defaultSession = "hyprland";
 
   environment.budgie.excludePackages = with pkgs; [
     mate.mate-terminal
@@ -128,6 +133,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    wayland
     libreoffice
     vim
     wget
