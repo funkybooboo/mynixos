@@ -165,6 +165,9 @@
     hyprwall
     networkmanagerapplet
     nautilus
+    luajitPackages.luarocks-nix
+    lua
+    wayclip
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
