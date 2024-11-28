@@ -167,6 +167,7 @@
     batmon
     wayclip
     wl-clipboard
+    ripgrep
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
