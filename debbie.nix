@@ -154,6 +154,12 @@
     htop-vim
     libnotify
     fastfetch
+    waybar
+    rofi
+    hyprpaper
+    hyprwall
+    networkmanagerapplet
+    nautilus
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
