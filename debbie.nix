@@ -155,7 +155,7 @@
     libnotify
     fastfetch
     waybar
-    rofi
+    wofi
     hyprpaper
     hyprwall
     networkmanagerapplet
