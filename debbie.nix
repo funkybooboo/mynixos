@@ -212,4 +212,8 @@
     dates = "9:00";
     randomizedDelaySec = "45min";
   };
+
+  environment.shellInit = ''
+    hyprpaper ~/Pictures/background/nixos_simple_background.png
+  '';
 }
