@@ -51,7 +51,7 @@
     enable = true;
   };
 
-  #services.xserver.desktopManager.budgie.enable = true;
+  services.xserver.desktopManager.budgie.enable = true;
   services.xserver.displayManager.lightdm.enable = true;
 
   environment.budgie.excludePackages = with pkgs; [
@@ -152,7 +152,6 @@
     sqlite
     tree
     htop-vim
-    libnotify
     fastfetch
     waybar
     wofi
