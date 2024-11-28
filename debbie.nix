@@ -165,6 +165,8 @@
     luajitPackages.luarocks-nix
     lua
     batmon
+    wayclip
+    wl-clipboard
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
