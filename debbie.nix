@@ -194,6 +194,13 @@
     # Add any missing dynamic libraries for unpackaged programs here, NOT in environment.systemPackages
   ];
 
+  systemd.user.services.waybar = {
+    description = "Waybar - Wayland Status Bar";
+    wantedBy = ["graphical.target"]; # Ensure it starts with the graphical session.
+    serviceConfig.ExecStart = "${pkgs.waybar}/bin/waybar"; # Path to Waybar binary
+    serviceConfig.Restart = "always"; # Restart if Waybar crashes
+  };
+
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave
