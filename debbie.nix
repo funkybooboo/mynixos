@@ -46,7 +46,12 @@
     };
   };
 
-  services.xserver.desktopManager.budgie.enable = true;
+  programs.hyprland = {
+    # Install the packages from nixpkgs
+    enable = true;
+  };
+
+  #services.xserver.desktopManager.budgie.enable = true;
   services.xserver.displayManager.lightdm.enable = true;
 
   environment.budgie.excludePackages = with pkgs; [
