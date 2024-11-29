@@ -100,7 +100,6 @@
       neovim
       fish
       kitty
-      jetbrains-toolbox
       discord
       lsd
       bat
