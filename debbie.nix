@@ -127,6 +127,7 @@
       jetbrains.goland
       jetbrains.datagrip
       jetbrains.clion
+      protonvpn-gui
     ];
   };
 
