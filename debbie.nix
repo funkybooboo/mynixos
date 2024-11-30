@@ -57,7 +57,7 @@
 
   services.xserver.displayManager.lightdm.enable = true;
 
-  services.xserver.displayManager.defaultSession = "hyprland";
+  services.displayManager.defaultSession = "hyprland";
 
   environment.budgie.excludePackages = with pkgs; [
     mate.mate-terminal
@@ -121,22 +121,18 @@
       vlc
       jetbrains.webstorm
       jetbrains.rust-rover
-      jetbrains.rider
       jetbrains.pycharm-professional
       jetbrains.idea-ultimate
       jetbrains.goland
       jetbrains.datagrip
       jetbrains.clion
       protonvpn-gui
+      brave
     ];
   };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
-  fonts.packages = with pkgs; [
-    (nerdfonts.override {fonts = ["JetBrainsMono"];})
-  ];
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -176,6 +172,8 @@
     wayclip
     wl-clipboard
     ripgrep
+    nerd-fonts.jetbrains-mono
+    dotnetCorePackages.sdk_9_0
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
