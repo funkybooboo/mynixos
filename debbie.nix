@@ -46,18 +46,9 @@
     };
   };
 
-  programs.hyprland = {
-    # Install the packages from nixpkgs
-    enable = true;
-    # Whether to enable XWayland
-    xwayland.enable = true;
-  };
-
   services.xserver.desktopManager.budgie.enable = true;
 
   services.xserver.displayManager.lightdm.enable = true;
-
-  services.displayManager.defaultSession = "hyprland";
 
   environment.budgie.excludePackages = with pkgs; [
     mate.mate-terminal
@@ -105,7 +96,6 @@
       bat
       tldr
       fzf
-      kalker
       docker
       wireshark
       postman
@@ -127,6 +117,7 @@
       jetbrains.datagrip
       jetbrains.clion
       protonvpn-gui
+      btop
     ];
   };
 
@@ -136,7 +127,6 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    wayland
     libreoffice
     vim
     wget
@@ -162,14 +152,9 @@
     tree
     htop-vim
     fastfetch
-    wofi
-    networkmanagerapplet
-    nautilus
     luajitPackages.luarocks-nix
     lua
     batmon
-    wayclip
-    wl-clipboard
     xclip
     ripgrep
     nerd-fonts.jetbrains-mono
