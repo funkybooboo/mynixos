@@ -127,7 +127,6 @@
       jetbrains.datagrip
       jetbrains.clion
       protonvpn-gui
-      brave
     ];
   };
 
@@ -171,6 +170,7 @@
     batmon
     wayclip
     wl-clipboard
+    xclip
     ripgrep
     nerd-fonts.jetbrains-mono
     dotnetCorePackages.sdk_9_0
