@@ -181,7 +181,6 @@
     ripgrep
     nerd-fonts.jetbrains-mono
     dotnetCorePackages.sdk_9_0
-    gnome-tweaks
 
     dunst
     libnotify
