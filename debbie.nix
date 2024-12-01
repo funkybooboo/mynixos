@@ -89,6 +89,11 @@
     shell = pkgs.fish;
     packages = with pkgs; [
       neovim
+      tree-sitter
+      lazygit
+      luajitPackages.luarocks-nix
+
+      go
       fish
       kitty
       discord
@@ -139,6 +144,9 @@
     nodejs_23
     rocmPackages_5.llvm.clang-unwrapped
     python313
+    python312Packages.pip
+    php
+    php84Packages.composer
     poetry
     zulu23
     gradle
@@ -152,8 +160,8 @@
     tree
     htop-vim
     fastfetch
-    luajitPackages.luarocks-nix
     lua
+    julia
     batmon
     xclip
     ripgrep
