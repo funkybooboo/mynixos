@@ -37,14 +37,6 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
-  hardware.opengl.enable = true;
-  services.xserver.videoDrivers = ["intel"];
-
   # Configure X11
   services.xserver = {
     enable = true;
@@ -54,13 +46,13 @@
     };
   };
 
-  services.xserver.desktopManager.plasma6.enable = true;
-
+  services.libinput.enable = true;
+  services.xserver.desktopManager.cinnamon.enable = true;
   services.xserver.displayManager.lightdm.enable = true;
 
-  environment.budgie.excludePackages = with pkgs; [
-    mate.mate-terminal
-    vlc
+  services.displayManager.defaultSession = "cinnamon";
+
+  environment.cinnamon.excludePackages = with pkgs; [
   ];
 
   # Enable CUPS to print documents.
@@ -82,7 +74,7 @@
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
-  services.xserver.libinput.enable = true;
+  # services.xserver.libinput.enable = true;
 
   programs.fish.enable = true;
 
@@ -122,14 +114,8 @@
       drawing
       musicpod
       vlc
-      jetbrains.webstorm
-      jetbrains.rust-rover
-      jetbrains.pycharm-professional
+
       jetbrains.idea-ultimate
-      jetbrains.goland
-      jetbrains.datagrip
-      jetbrains.clion
-      protonvpn-gui
     ];
   };
 
@@ -176,18 +162,9 @@
     batmon
     xclip
     ripgrep
-    nerd-fonts.jetbrains-mono
+    nerdfonts
     dotnetCorePackages.sdk_9_0
     libnotify
-
-    dunst
-    swww
-    rofi-wayland
-    networkmanagerapplet
-    grim
-    slurp
-    wl-clipboard
-    waybar
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -220,7 +197,7 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "unstable";
+  system.stateVersion = "24.11";
 
   system.autoUpgrade = {
     enable = true;
