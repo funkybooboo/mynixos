@@ -145,7 +145,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     libreoffice
-    vim
     wget
     curl
     firefox
@@ -181,6 +180,7 @@
     ripgrep
     nerd-fonts.jetbrains-mono
     dotnetCorePackages.sdk_9_0
+    sl
 
     dunst
     libnotify
