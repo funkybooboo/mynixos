@@ -42,6 +42,9 @@
     xwayland.enable = true;
   };
 
+  hardware.opengl.enable = true;
+  services.xserver.videoDrivers = ["intel"];
+
   # Configure X11
   services.xserver = {
     enable = true;
