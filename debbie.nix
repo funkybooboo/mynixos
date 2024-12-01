@@ -92,6 +92,7 @@
       tree-sitter
       lazygit
       luajitPackages.luarocks-nix
+      fd
 
       go
       fish
