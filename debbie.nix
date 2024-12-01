@@ -187,8 +187,7 @@
     grim
     slurp
     wl-clipboard
-    nautilus
-    gbar
+    waybar
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
