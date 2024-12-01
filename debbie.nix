@@ -179,12 +179,6 @@
     nerd-fonts.jetbrains-mono
     dotnetCorePackages.sdk_9_0
 
-    waybar
-    (
-      pkgs.waybar.overrideAttrs (oldAttrs: {
-        mesonFlags = oldAttrs.mesonFlags ++ ["-Dexperimental=true"];
-      })
-    )
     dunst
     libnotify
     swww
@@ -194,6 +188,7 @@
     slurp
     wl-clipboard
     nautilus
+    gbar
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
