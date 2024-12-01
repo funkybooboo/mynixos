@@ -167,7 +167,6 @@
     dotnetCorePackages.sdk_9_0
     libnotify
   ];
-
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
