@@ -116,6 +116,7 @@
       vlc
 
       jetbrains.idea-ultimate
+      jetbrains.pycharm-professional
     ];
   };
 
