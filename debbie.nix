@@ -37,6 +37,11 @@
     LC_TIME = "en_US.UTF-8";
   };
 
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
+
   # Configure X11
   services.xserver = {
     enable = true;
