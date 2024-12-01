@@ -141,6 +141,8 @@
     gnat14
     zig
     cargo
+    rustc
+    rustfmt
     nodejs_23
     rocmPackages_5.llvm.clang-unwrapped
     python313
