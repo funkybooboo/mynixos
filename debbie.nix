@@ -54,7 +54,7 @@
     };
   };
 
-  services.xserver.desktopManager.budgie.enable = true;
+  services.xserver.desktopManager.plasma6.enable = true;
 
   services.xserver.displayManager.lightdm.enable = true;
 
@@ -74,7 +74,6 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
     jack.enable = true;
 
     # use the example session manager (no others are packaged yet so this is enabled by default,
@@ -83,7 +82,7 @@
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
+  services.xserver.libinput.enable = true;
 
   programs.fish.enable = true;
 
@@ -131,7 +130,6 @@
       jetbrains.datagrip
       jetbrains.clion
       protonvpn-gui
-      btop
     ];
   };
 
@@ -180,10 +178,9 @@
     ripgrep
     nerd-fonts.jetbrains-mono
     dotnetCorePackages.sdk_9_0
-    sl
+    libnotify
 
     dunst
-    libnotify
     swww
     rofi-wayland
     networkmanagerapplet
