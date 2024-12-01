@@ -163,7 +163,7 @@
     tree
     htop-vim
     fastfetch
-    lua
+    lua51Packages.lua
     julia
     batmon
     xclip
