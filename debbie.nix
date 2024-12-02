@@ -133,14 +133,19 @@
     firefox
     git
     gnat14
+    libgccjit
     zig
     cargo
     rustc
+    dbus
+    python312Packages.pydbus
+    pkg-config-unwrapped
     rustfmt
     nodejs_23
     rocmPackages_5.llvm.clang-unwrapped
     python313
     python312Packages.pip
+    python312Packages.meson
     php
     php84Packages.composer
     poetry
