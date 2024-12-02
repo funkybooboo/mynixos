@@ -141,6 +141,7 @@
     rocmPackages_5.llvm.clang-unwrapped
     python313
     python312Packages.pip
+    python312Packages.pydbus
     php
     php84Packages.composer
     poetry
