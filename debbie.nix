@@ -141,6 +141,7 @@
     python312Packages.pydbus
     pkg-config-unwrapped
     rustfmt
+    python312Packages.dbus-python
     nodejs_23
     rocmPackages_5.llvm.clang-unwrapped
     python313
