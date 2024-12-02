@@ -114,9 +114,7 @@
       drawing
       musicpod
       vlc
-
-      jetbrains.idea-ultimate
-      jetbrains.pycharm-professional
+      jetbrains-toolbox
     ];
   };
 
