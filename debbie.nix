@@ -143,6 +143,7 @@
     rustfmt
     python312Packages.dbus-python
     nodejs_23
+    python312Packages.ninja
     rocmPackages_5.llvm.clang-unwrapped
     python313
     python312Packages.pip
