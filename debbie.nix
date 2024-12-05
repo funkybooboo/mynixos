@@ -92,7 +92,7 @@
       lazygit
       luajitPackages.luarocks-nix
       fd
-
+      ladybird
       go
       fish
       kitty
