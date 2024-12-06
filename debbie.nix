@@ -96,6 +96,7 @@
       fish
       kitty
       discord
+      cloc
       lsd
       bat
       tldr
