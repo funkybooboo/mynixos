@@ -115,6 +115,9 @@
       musicpod
       vlc
       jetbrains-toolbox
+      ladybird
+      lazygit
+      lazydocker
     ];
   };
 
@@ -128,7 +131,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     libreoffice
-    gnome-tweaks
     wget
     curl
     firefox
@@ -138,13 +140,8 @@
     zig
     cargo
     rustc
-    dbus
-    python312Packages.pydbus
-    pkg-config-unwrapped
     rustfmt
-    python312Packages.dbus-python
     nodejs_23
-    python312Packages.ninja
     rocmPackages_5.llvm.clang-unwrapped
     python313
     python312Packages.pip
