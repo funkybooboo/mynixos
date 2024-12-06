@@ -118,6 +118,22 @@
       ladybird
       lazygit
       lazydocker
+      proton-pass
+      protonmail-desktop
+      protonmail-bridge-gui
+      discordo
+      yazi
+      timg
+      asciinema
+      cmatrix
+      aalib
+      fortune-kind
+      oneko
+      espeak
+      toilet
+      cowsay
+      asciiquarium
+      rig
     ];
   };
 
@@ -131,6 +147,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     libreoffice
+    vim
     wget
     curl
     firefox
