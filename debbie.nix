@@ -134,6 +134,7 @@
       cowsay
       asciiquarium
       rig
+      nix-tour
     ];
   };
 
