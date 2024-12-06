@@ -135,6 +135,7 @@
       asciiquarium
       rig
       nix-tour
+      fnm
     ];
   };
 
