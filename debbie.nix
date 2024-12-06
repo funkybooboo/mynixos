@@ -128,6 +128,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     libreoffice
+    gnome-tweaks
     wget
     curl
     firefox
