@@ -136,6 +136,7 @@
       rig
       nix-tour
       fnm
+      lynx
     ];
   };
 
