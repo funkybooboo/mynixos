@@ -139,6 +139,7 @@
       fnm
       lynx
       gh
+      todo
     ];
   };
 
