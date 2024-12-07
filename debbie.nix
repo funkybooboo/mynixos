@@ -121,6 +121,7 @@
       proton-pass
       protonmail-desktop
       protonmail-bridge-gui
+      protonvpn-gui
       discordo
       yazi
       timg
