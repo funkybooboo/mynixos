@@ -138,6 +138,7 @@
       nix-tour
       fnm
       lynx
+      gh
     ];
   };
 
