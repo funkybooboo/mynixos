@@ -187,6 +187,7 @@
     nerdfonts
     dotnetCorePackages.sdk_9_0
     libnotify
+    ffmpeg
   ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
