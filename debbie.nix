@@ -128,15 +128,10 @@
       asciinema
       cmatrix
       aalib
-      fortune-kind
       oneko
       espeak
-      toilet
-      cowsay
       asciiquarium
-      rig
       nix-tour
-      fnm
       lynx
       gh
       todo
